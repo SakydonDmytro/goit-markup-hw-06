@@ -672,6 +672,9 @@ Footer styles
 .bottom-nav-links:focus{
     color: var(--main-hover-color);
 }
+.bottom-social {
+    margin-right: 105px;
+}
 .bottom-social-head {
     font-weight: 700;
     font-size: 14px;
