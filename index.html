@@ -66,8 +66,43 @@
 					<button class="heroic-button" type="button" data-modal-open>Заказать услугу</button>
 					<div class="backdrop is-hidden" data-modal>
 						<div class="modal-wrapper">
+							<form class="form">
+								<p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+								<ul class="form-list">
+									<li class="form-element">
+										<label class="form-element-label" for="name">Имя</label>
+										<input type="text" name="user-name" id="name" />
+									</li>
+									<li class="form-element">
+										<label class="form-element-label" for="telephone">Телефон</label>
+										<input type="tel" name="user-phone" id="telephone" />
+									</li>
+									<li class="form-element">
+										<label class="form-element-label" for="mail">Почта</label>
+										<input type="email" name="user-mail" id="mail" />
+									</li>
+								</ul>
+								<div>
+									<label class="form-element-label" for="comments">Комментарий</label>
+									<textarea
+										class="comment-area"
+										name="textarea"
+										cols="30"
+										rows="10"
+										placeholder="Введите текст"
+										id="comments"
+									></textarea>
+								</div>
+								<div class="form-element">
+									<input type="checkbox" name="conditions-agreement" id="conditions" />
+									<label class="form-element-label" for="conditions">
+										Соглашаюсь с рассылкой и принимаю Условия договора
+									</label>
+								</div>
+								<button type="submit">Отправить</button>
+							</form>
 							<button class="modal-btn" type="button" data-modal-close>
-								<svg width="11" height="11">
+								<svg class="modal-close-btn" width="11" height="11">
 									<use href="./images/close.svg#close"></use>
 								</svg>
 							</button>
