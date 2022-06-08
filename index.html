@@ -472,12 +472,23 @@
 						</li>
 					</ul>
 				</div>
-				<form>
+				<div class="bottom-sign">
 					<p class="bottom-social-head">Подпишитесь на рассылку</p>
-					<label for="user-mail">E-mail</label>
-					<input class="bottom-social-head" type="text" name="user-mail" id="user-mail" />
-					<button type="submit">Подписаться</button>
-				</form>
+					<form class="bottom-form">
+						<div class="input-group">
+							<label for="user-mail"></label>
+							<input class="input-form" type="text" name="user-mail" id="user-mail" placeholder="E-mail" />
+						</div>
+						<button class="bottom-submit-btn" type="submit">
+							<div class="button-decoration">
+								<span class="button-name">Подписаться</span>
+								<svg width="20" height="20">
+									<use href="./images/sprite.svg#telegram-icon"></use>
+								</svg>
+							</div>
+						</button>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
