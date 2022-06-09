@@ -66,47 +66,76 @@
 					<button class="heroic-button" type="button" data-modal-open>Заказать услугу</button>
 					<div class="backdrop is-hidden" data-modal>
 						<div class="modal-wrapper">
-							<form class="form">
-								<p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+							<strong class="modal-form-title">Оставьте свои данные, мы вам перезвоним</strong>
+							<form class="modal-form">
+								<!-- user data -->
 								<ul class="form-list">
 									<li class="form-element">
-										<label class="form-element-label" for="name">Имя</label>
-										<input type="text" name="user-name" id="name" />
+										<label class="form-element-label">
+											<span class="form-label">Имя</span>
+											<input class="form-element-input" type="text" name="user-name" />
+											<svg class="form-icon" width="12" height="12">
+												<use href="./images/sprite.svg#modal-person"></use>
+											</svg>
+										</label>
 									</li>
 									<li class="form-element">
-										<label class="form-element-label" for="telephone">Телефон</label>
-										<input type="tel" name="user-phone" id="telephone" />
+										<label class="form-element-label">
+											<span class="form-label">Телефон</span>
+											<input class="form-element-input" type="tel" name="user-phone" />
+											<svg class="form-icon" width="13" height="13">
+												<use href="./images/sprite.svg#modal-phone"></use>
+											</svg>
+										</label>
 									</li>
 									<li class="form-element">
-										<label class="form-element-label" for="mail">Почта</label>
-										<input type="email" name="user-mail" id="mail" />
+										<label class="form-element-label">
+											<span class="form-label">Почта</span>
+											<input class="form-element-input" type="email" name="user-mail" />
+											<svg class="form-icon" width="15" height="12">
+												<use href="./images/sprite.svg#modal-mail" #></use>
+											</svg>
+										</label>
 									</li>
 								</ul>
-								<div>
-									<label class="form-element-label" for="comments">Комментарий</label>
-									<textarea
-										class="comment-area"
-										name="textarea"
-										cols="30"
-										rows="10"
-										placeholder="Введите текст"
-										id="comments"
-									></textarea>
-								</div>
-								<div class="form-element">
-									<input type="checkbox" name="conditions-agreement" id="conditions" />
-									<label class="form-element-label" for="conditions">
-										Соглашаюсь с рассылкой и принимаю Условия договора
+
+								<!-- Comments block -->
+								<div class="modal-form-comment">
+									<label class="form-element-label">
+										<span class="form-label">Комментарий</span>
+										<textarea
+											class="comment-area"
+											name="textarea"
+											cols="30"
+											rows="10"
+											placeholder="Введите текст"
+										></textarea>
 									</label>
 								</div>
-								<button type="submit">Отправить</button>
+
+								<!-- Policy agreement form -->
+								<label class="form-policy-group" for="conditions">
+									<input class="checkbox" hidden type="checkbox" name="conditions-agreement" id="conditions" />
+									<span class="custom-checkbox">
+										<svg class="custom-checkbox-icon" width="11" height="8">
+											<use href="./images/check.svg#icon-Vector"></use>
+										</svg>
+									</span>
+									<span class="form-policy-description">
+										Соглашаюсь с рассылкой и принимаю
+										<span><a class="policy-link" href="#">Условия договора</a></span>
+									</span>
+								</label>
+
+								<!-- Submit button -->
+								<button class="submit-btn" type="submit">Отправить</button>
 							</form>
 							<button class="modal-btn" type="button" data-modal-close>
 								<svg class="modal-close-btn" width="11" height="11">
 									<use href="./images/close.svg#close"></use>
 								</svg>
 							</button>
-							<form class="modal-form"></form>
+							<!-- <form class="modal-form"></form> -->
 						</div>
 					</div>
 				</div>
