@@ -279,14 +279,25 @@ modal-form
     background-color: var(--main-background-color);
 
     cursor: pointer;
+    transition: border var(--amination);
 }
-.modal-close-btn:hover {
+.modal-btn:hover {
+    border: 1px solid var(--main-hover-color) ;
+}
+
+.modal-close-bt {
+    outline: transparent;
     transition: fill var(--amination);
 }
 
-.modal-close-btn:hover {
+.modal-btn:hover .modal-close-btn {
     fill: var(--main-hover-color);
+   
 }
+
+/* .modal-close-btn:hover {
+   
+} */
 .modal-form {
     width: 448px;
   
@@ -303,11 +314,9 @@ modal-form
 .form-element-label
  {
     display: block;
-    margin-bottom: 10px;
-}
-.form-element-label {
     position: relative;
 }
+
 .form-label {
     display: block;
     margin-bottom: 4px;
@@ -344,6 +353,7 @@ modal-form
 .modal-form-comment {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .form-element-input:focus,
@@ -395,6 +405,7 @@ modal-form
 .form-policy-group {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;    
 }
 
@@ -891,8 +902,11 @@ Footer styles
     letter-spacing: 0.06em;
     
     color: var(--main-background-color);
+    outline: transparent;
     
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -913,11 +927,6 @@ Footer styles
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button-decoration {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .button-name {
     margin-right: 10px;
 }

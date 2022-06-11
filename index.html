@@ -93,26 +93,25 @@
 											<span class="form-label">Почта</span>
 											<input class="form-element-input" type="email" name="user-mail" />
 											<svg class="form-icon" width="15" height="12">
-												<use href="./images/sprite.svg#modal-mail" #></use>
+												<use href="./images/sprite.svg#modal-mail"></use>
 											</svg>
 										</label>
 									</li>
+
+									<!-- Comments block -->
+									<li class="modal-form-comment">
+										<label class="form-element-label">
+											<span class="form-label">Комментарий</span>
+											<textarea
+												class="comment-area"
+												name="textarea"
+												cols="30"
+												rows="10"
+												placeholder="Введите текст"
+											></textarea>
+										</label>
+									</li>
 								</ul>
-
-								<!-- Comments block -->
-								<div class="modal-form-comment">
-									<label class="form-element-label">
-										<span class="form-label">Комментарий</span>
-										<textarea
-											class="comment-area"
-											name="textarea"
-											cols="30"
-											rows="10"
-											placeholder="Введите текст"
-										></textarea>
-									</label>
-								</div>
-
 								<!-- Policy agreement form -->
 								<label class="form-policy-group" for="conditions">
 									<input class="checkbox" hidden type="checkbox" name="conditions-agreement" id="conditions" />
@@ -129,13 +128,13 @@
 
 								<!-- Submit button -->
 								<button class="submit-btn" type="submit">Отправить</button>
+								<!-- exit form button -->
+								<button class="modal-btn" type="button" data-modal-close>
+									<svg class="modal-close-btn" width="11" height="11">
+										<use href="./images/close.svg#close"></use>
+									</svg>
+								</button>
 							</form>
-							<button class="modal-btn" type="button" data-modal-close>
-								<svg class="modal-close-btn" width="11" height="11">
-									<use href="./images/close.svg#close"></use>
-								</svg>
-							</button>
-							<!-- <form class="modal-form"></form> -->
 						</div>
 					</div>
 				</div>
@@ -509,12 +508,10 @@
 							<input class="input-form" type="text" name="user-mail" id="user-mail" placeholder="E-mail" />
 						</div>
 						<button class="bottom-submit-btn" type="submit">
-							<div class="button-decoration">
-								<span class="button-name">Подписаться</span>
-								<svg width="20" height="20">
-									<use href="./images/sprite.svg#telegram-icon"></use>
-								</svg>
-							</div>
+							<span class="button-name">Подписаться</span>
+							<svg width="20" height="20">
+								<use href="./images/sprite.svg#telegram-icon"></use>
+							</svg>
 						</button>
 					</form>
 				</div>
